@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fathima Shana MV | Computer Science & Engineering Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Fathima Shana MV - Diploma Student in Computer Science & Engineering, Web Developer, and Data Science Enthusiast.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Reading / Scroll Progress Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+  <!-- Background Glow Effects -->
+  <div class="glow-sphere sphere-1"></div>
+  <div class="glow-sphere sphere-2"></div>
+  <div class="glow-sphere sphere-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Shana</span>
+        <span class="logo-dot">.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <!-- Print / PDF Resume Button -->
+        <button id="printBtn" class="btn btn-outline btn-sm" title="Print / Save Portfolio as PDF">
+          <i class="fa-solid fa-print"></i> <span>Resume</span>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section container">
+      <!-- Interactive Constellation / Ambient Canvas -->
+      <canvas id="ambientCanvas" class="ambient-canvas"></canvas>
+
+      <div class="hero-content reveal">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Open to Internships & Junior Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Fathima Shana MV</span>
+        </h1>
+
+        <h2 class="hero-subtitle">
+          I am a <span class="typing-text" id="typingText">Computer Science Student</span><span
+            class="typing-cursor">|</span>
+        </h2>
+
+        <p class="hero-description">
+          Computer Science and Engineering diploma student with a solid foundation in programming, web development,
+          databases, and machine learning. Passionate about building practical software solutions and continuously
+          mastering modern technologies.
+        </p>
+
+        <!-- Quick Info Tags -->
+        <div class="hero-meta">
+          <div class="meta-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Malappuram, Kerala, India</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>KMCT Polytechnic College</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span>ML Intern @ Acadeno</span>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> Explore Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+          </a>
+          <a href="https://linkedin.com/in/fathima-shana-b8823340a" target="_blank" rel="noopener noreferrer"
+            class="btn btn-icon-only" title="Connect on LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:fathimashana721@gmail.com" class="btn btn-icon-only" title="Send Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Credentials & Highlights Row -->
+      <div class="hero-highlights-grid">
+        <div class="hero-highlight-card tilt-card reveal reveal-delay-1">
+          <div class="hero-hl-icon icon-blue">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="hero-hl-content">
+            <span class="hero-hl-title">Diploma in CSE</span>
+            <span class="hero-hl-sub">KMCT Polytechnic (2025–2027)</span>
+          </div>
+        </div>
+
+        <div class="hero-highlight-card tilt-card reveal reveal-delay-2">
+          <div class="hero-hl-icon icon-purple">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div class="hero-hl-content">
+            <span class="hero-hl-title">Data Science & ML</span>
+            <span class="hero-hl-sub">Internship @ Acadeno (2026)</span>
+          </div>
+        </div>
+
+        <div class="hero-highlight-card tilt-card reveal reveal-delay-3">
+          <div class="hero-hl-icon icon-emerald">
+            <i class="fa-regular fa-calendar-check"></i>
+          </div>
+          <div class="hero-hl-content">
+            <span class="hero-hl-title">Event Calendar System</span>
+            <span class="hero-hl-sub">Minor Project • Semester IV</span>
+          </div>
+        </div>
+
+        <div class="hero-highlight-card tilt-card reveal reveal-delay-4">
+          <div class="hero-hl-icon icon-amber">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="hero-hl-content">
+            <span class="hero-hl-title">Core Tech Stack</span>
+            <span class="hero-hl-sub">Python • Web • MySQL • C/Java</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Driven by Curiosity & Code</h2>
+        <p class="section-subtitle">Get to know more about my background, passion, and professional aspirations.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-card reveal reveal-left tilt-card">
+          <div class="about-avatar-row">
+            <div class="avatar-circle">
+              <span class="avatar-initials">FS</span>
+            </div>
+            <div>
+              <h3 class="about-name">Fathima Shana MV</h3>
+              <p class="about-role">Computer Science & Engineering Diploma Student</p>
+            </div>
+          </div>
+
+          <p class="about-paragraph">
+            I am a dedicated Computer Science and Engineering diploma student with a strong technical foundation
+            spanning programming languages, relational databases, web development, and applied artificial intelligence.
+          </p>
+          <p class="about-paragraph">
+            Having successfully completed academic projects like the <strong>Event Calendar System</strong> and gained
+            intensive internship training in <strong>Data Science & Machine Learning</strong> at Acadeno Technologies, I
+            love translating complex concepts into clean, functional, and user-centric software.
+          </p>
+
+          <div class="languages-box">
+            <h4><i class="fa-solid fa-globe"></i> Languages Spoken</h4>
+            <div class="lang-tags">
+              <span class="lang-pill"><strong>Malayalam:</strong> Native</span>
+              <span class="lang-pill"><strong>English:</strong> Professional Proficiency</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-highlights-grid">
+          <div class="highlight-card reveal reveal-right reveal-delay-1 tilt-card">
+            <div class="highlight-icon icon-blue">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h4>Full-Stack Foundations</h4>
+            <p>Hands-on development experience with HTML5, CSS3, JavaScript, PHP, Node.js, and MySQL database
+              management.</p>
+          </div>
+
+          <div class="highlight-card reveal reveal-right reveal-delay-2 tilt-card">
+            <div class="highlight-icon icon-purple">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h4>Data Science & ML</h4>
+            <p>Practical training in Scikit-learn, Pandas, Microsoft Power BI, Google Colab, and core ML algorithms.</p>
+          </div>
+
+          <div class="highlight-card reveal reveal-right reveal-delay-3 tilt-card">
+            <div class="highlight-icon icon-emerald">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h4>Collaborative Team Player</h4>
+            <p>Proven track record of team project execution (Semester IV minor project team of 5), code sharing, and
+              communication.</p>
+          </div>
+
+          <div class="highlight-card reveal reveal-right reveal-delay-4 tilt-card">
+            <div class="highlight-icon icon-amber">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h4>Continuous Learner</h4>
+            <p>Eager to adopt emerging frameworks, master software engineering best practices, and contribute to
+              production teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section container">
+      <div class="section-header reveal">
+        <span class="section-tag">Technical Arsenal</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Proficiencies acquired through coursework, project implementation, and specialized
+          internship training.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="skill-tabs reveal">
+        <button class="skill-tab active" data-category="all">All Skills</button>
+        <button class="skill-tab" data-category="programming">Programming</button>
+        <button class="skill-tab" data-category="web">Web Development</button>
+        <button class="skill-tab" data-category="data">Data & AI</button>
+        <button class="skill-tab" data-category="database">Databases & Systems</button>
+      </div>
+
+      <div class="skills-container">
+        <!-- Programming Languages -->
+        <div class="skill-card-group reveal tilt-card" data-category="programming">
+          <div class="skill-card-group-header">
+            <i class="fa-solid fa-code text-indigo"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-badges">
+            <div class="skill-badge">
+              <i class="fa-brands fa-python skill-icon python-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Core & Data Science</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-java skill-icon java-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">OOP & Applications</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-solid fa-c skill-icon c-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">C</span>
+                <span class="skill-level">Procedural & Logic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-card-group reveal tilt-card reveal-delay-1" data-category="web">
+          <div class="skill-card-group-header">
+            <i class="fa-solid fa-globe text-cyan"></i>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-badges">
+            <div class="skill-badge">
+              <i class="fa-brands fa-html5 skill-icon html-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">HTML5</span>
+                <span class="skill-level">Semantic Markup</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">CSS3</span>
+                <span class="skill-level">Flexbox, Grid & Responsive</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-js skill-icon js-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">DOM & Dynamic Web</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-node-js skill-icon node-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level">Runtime & Backend</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-php skill-icon php-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">PHP</span>
+                <span class="skill-level">Server-Side Scripting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data & AI -->
+        <div class="skill-card-group reveal tilt-card reveal-delay-2" data-category="data">
+          <div class="skill-card-group-header">
+            <i class="fa-solid fa-chart-line text-purple"></i>
+            <h3>Data Science & AI</h3>
+          </div>
+          <div class="skill-badges">
+            <div class="skill-badge">
+              <i class="fa-solid fa-table skill-icon pandas-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Pandas</span>
+                <span class="skill-level">Data Analysis & Cleaning</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-solid fa-gears skill-icon scikit-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Scikit-learn</span>
+                <span class="skill-level">ML Modeling & Evaluation</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-solid fa-chart-pie skill-icon powerbi-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Microsoft Power BI</span>
+                <span class="skill-level">Dashboards & Visualization</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-solid fa-cloud skill-icon colab-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Google Colab</span>
+                <span class="skill-level">Jupyter Notebooks</span>
+              </div>
+            </div>
+          </div>
+          <!-- Algorithms Sub-box -->
+          <div class="ml-algorithms-box">
+            <span class="ml-title"><i class="fa-solid fa-diagram-project"></i> Machine Learning Algorithms
+              Practiced:</span>
+            <div class="ml-tags">
+              <span class="ml-tag">Logistic Regression</span>
+              <span class="ml-tag">K-Nearest Neighbors (KNN)</span>
+              <span class="ml-tag">Decision Tree</span>
+              <span class="ml-tag">Random Forest</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Systems -->
+        <div class="skill-card-group reveal tilt-card reveal-delay-3" data-category="database">
+          <div class="skill-card-group-header">
+            <i class="fa-solid fa-server text-emerald"></i>
+            <h3>Databases & Systems</h3>
+          </div>
+          <div class="skill-badges">
+            <div class="skill-badge">
+              <i class="fa-solid fa-database skill-icon mysql-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-level">Relational Database Mgmt</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-solid fa-code-branch skill-icon sql-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Queries, Joins & Schemas</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-linux skill-icon linux-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Linux Basics</span>
+                <span class="skill-level">CLI & Shell Commands</span>
+              </div>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-windows skill-icon windows-color"></i>
+              <div class="badge-info">
+                <span class="skill-name">Windows & SysAdmin</span>
+                <span class="skill-level">System Administration Basics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <div class="section-header reveal">
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">Projects & Implementations</h2>
+        <p class="section-subtitle">Real-world applications built to solve scheduling, workflow, and data management
+          challenges.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Main Academic Minor Project from CV -->
+        <div class="project-card featured-project reveal tilt-card">
+          <div class="project-badge-top">
+            <span class="tag-flag"><i class="fa-solid fa-star"></i> Academic Minor Project</span>
+            <span class="tag-meta">Semester IV • Team of 5</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="fa-regular fa-calendar-check"></i>
+              </div>
+              <div>
+                <h3 class="project-title">Event Calendar System</h3>
+                <p class="project-tagline">Web-based event scheduling, user management & interactive calendar portal</p>
+              </div>
+            </div>
+
+            <p class="project-text">
+              Developed a comprehensive web application to streamline scheduling, organization, and tracking of
+              institutional and personal events. Built collaboratively in a team of 5, contributing to both user-facing
+              interface modules and database integration.
+            </p>
+
+            <div class="project-features">
+              <h4>Key Functionalities:</h4>
+              <ul>
+                <li><i class="fa-solid fa-check text-success"></i> <strong>User Authentication:</strong> Secure user
+                  registration, credential verification, and session-based login.</li>
+                <li><i class="fa-solid fa-check text-success"></i> <strong>CRUD Event Management:</strong> Full event
+                  lifecycle support — create, view, modify, and delete events with custom details.</li>
+                <li><i class="fa-solid fa-check text-success"></i> <strong>Interactive Calendar View:</strong> Dynamic
+                  calendar display that highlights scheduled dates, upcoming milestones, and deadlines.</li>
+                <li><i class="fa-solid fa-check text-success"></i> <strong>Database Architecture:</strong> Designed
+                  relational MySQL schema for efficient event storage, user associations, and quick retrieval.</li>
+              </ul>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="tech-pill"><i class="fa-solid fa-server"></i> Backend Integration</span>
+              <span class="tech-pill"><i class="fa-solid fa-database"></i> MySQL</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" onclick="openDemoModal('calendar')">
+                <i class="fa-solid fa-laptop-code"></i> Live Feature Preview
+              </button>
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <i class="fa-solid fa-comments"></i> Inquire Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Domain Work: Machine Learning Pipeline -->
+        <div class="project-card reveal tilt-card reveal-delay-1">
+          <div class="project-badge-top">
+            <span class="tag-flag tag-cyan"><i class="fa-solid fa-brain"></i> Machine Learning Lab</span>
+            <span class="tag-meta">Acadeno Internship</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-icon-box icon-purple">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div>
+                <h3 class="project-title">ML Predictive Modeling & Analysis</h3>
+                <p class="project-tagline">Classification algorithms & dataset exploration</p>
+              </div>
+            </div>
+
+            <p class="project-text">
+              Implemented supervised classification workflows using <strong>Scikit-learn</strong> and
+              <strong>Pandas</strong>. Evaluated and tuned models including Logistic Regression, K-Nearest Neighbors,
+              Decision Trees, and Random Forests with accuracy metrics.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">Scikit-learn</span>
+              <span class="tech-pill">Google Colab</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-outline btn-sm" onclick="openDemoModal('ml')">
+                <i class="fa-solid fa-chart-simple"></i> View Model Pipeline
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Domain Work: Power BI Analytics -->
+        <div class="project-card reveal tilt-card reveal-delay-2">
+          <div class="project-badge-top">
+            <span class="tag-flag tag-amber"><i class="fa-solid fa-chart-pie"></i> Business Intelligence</span>
+            <span class="tag-meta">Data Visualization</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-icon-box icon-amber">
+                <i class="fa-solid fa-chart-column"></i>
+              </div>
+              <div>
+                <h3 class="project-title">Interactive Power BI Dashboards</h3>
+                <p class="project-tagline">Visual analytics & KPI performance tracking</p>
+              </div>
+            </div>
+
+            <p class="project-text">
+              Designed interactive reports leveraging Microsoft Power BI. Transformed raw tabular records into
+              actionable visual charts, cross-filters, and performance KPIs for clear data storytelling.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Power BI</span>
+              <span class="tech-pill">Data Modeling</span>
+              <span class="tech-pill">Excel / CSV</span>
+              <span class="tech-pill">KPI Reports</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-outline btn-sm" onclick="openDemoModal('powerbi')">
+                <i class="fa-solid fa-eye"></i> View Dashboard Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Internship Section -->
+    <section id="experience" class="section container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work & Training</span>
+        <h2 class="section-title">Internship Experience</h2>
+        <p class="section-subtitle">Real-world training and practical project exposure in emerging technologies.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-company"><i class="fa-solid fa-building"></i> Acadeno, Kozhikode</span>
+                <h3 class="timeline-role">Student Intern – Data Science & Machine Learning</h3>
+              </div>
+              <div class="timeline-date">
+                <i class="fa-regular fa-calendar"></i> May 2026 – June 2026
+              </div>
+            </div>
+
+            <p class="timeline-desc">
+              Completed an intensive hands-on internship focused on the end-to-end Data Science lifecycle, practical
+              machine learning algorithms, and real dataset modeling.
+            </p>
+
+            <ul class="timeline-bullets">
+              <li>Applied Python, Pandas, and NumPy for exploratory data analysis (EDA), handling null values, and
+                feature scaling.</li>
+              <li>Built and evaluated classification models using Scikit-learn (Logistic Regression, KNN, Decision Tree,
+                Random Forest).</li>
+              <li>Utilized Google Colab for reproducible cloud-based experimentation and model validation.</li>
+              <li>Created visual summaries and analytical charts to communicate pattern discoveries.</li>
+            </ul>
+
+            <div class="cert-pill-box">
+              <i class="fa-solid fa-award text-amber"></i>
+              <span>Awarded <strong>Internship Completion Certificate</strong> by Acadeno Technologies (2026)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Education & Qualifications</h2>
+        <p class="section-subtitle">My academic journey in Computer Science and Engineering.</p>
+      </div>
+
+      <div class="education-grid">
+        <!-- Diploma -->
+        <div class="education-card highlight-card-border reveal reveal-left tilt-card">
+          <div class="edu-badge">Current Degree</div>
+          <div class="edu-icon-wrap">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="edu-year">2025 – 2027 (Expected)</div>
+          <h3 class="edu-degree">Diploma in Computer Science & Engineering</h3>
+          <h4 class="edu-institution">KMCT Polytechnic College, Kuttippuram</h4>
+          <p class="edu-description">
+            Comprehensive 3-year technical diploma curriculum encompassing computer architecture, data structures,
+            algorithms, object-oriented programming, relational databases, web engineering, and system administration.
+          </p>
+          <div class="edu-tags">
+            <span>Data Structures</span>
+            <span>RDBMS & SQL</span>
+            <span>Web Technologies</span>
+            <span>Software Engg</span>
+          </div>
+        </div>
+
+        <!-- SSLC -->
+        <div class="education-card reveal reveal-right tilt-card">
+          <div class="edu-badge edu-badge-completed">Completed</div>
+          <div class="edu-icon-wrap icon-secondary">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="edu-year">Secondary Education</div>
+          <h3 class="edu-degree">SSLC (Secondary School Leaving Certificate)</h3>
+          <h4 class="edu-institution">GHSS Kuttippuram</h4>
+          <p class="edu-description">
+            Completed secondary schooling under the State Board with high academic performance, fostering a keen
+            interest in science, mathematics, and computing technologies.
+          </p>
+          <div class="edu-tags">
+            <span>Science</span>
+            <span>Mathematics</span>
+            <span>Information Tech</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Additional Info -->
+    <section class="section container">
+      <div class="cert-info-card reveal tilt-card">
+        <div class="cert-col">
+          <div class="cert-header">
+            <i class="fa-solid fa-certificate cert-star-icon"></i>
+            <div>
+              <h3>Verified Certifications</h3>
+              <p>Professional course completion & technical credentials</p>
+            </div>
+          </div>
+          <div class="cert-item-detail">
+            <div class="cert-icon-mini"><i class="fa-solid fa-file-shield"></i></div>
+            <div>
+              <h4>Internship Completion Certificate – Data Science & Machine Learning</h4>
+              <p>Acadeno Technologies • Issued in 2026</p>
+              <span class="cert-tag"><i class="fa-solid fa-circle-check"></i> Verified Credential</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-divider"></div>
+
+        <div class="cert-col">
+          <div class="cert-header">
+            <i class="fa-solid fa-gear cert-star-icon"></i>
+            <div>
+              <h3>System & Operational Strengths</h3>
+              <p>Environment and deployment familiarity</p>
+            </div>
+          </div>
+          <div class="systems-pill-grid">
+            <div class="sys-item"><i class="fa-brands fa-windows"></i> Windows Environment</div>
+            <div class="sys-item"><i class="fa-brands fa-linux"></i> Linux CLI & Navigation</div>
+            <div class="sys-item"><i class="fa-solid fa-shield-halved"></i> System Administration Basics</div>
+            <div class="sys-item"><i class="fa-solid fa-code-compare"></i> Team Git Workflows</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Connect & Build</h2>
+        <p class="section-subtitle">Interested in collaborating or discussing internships and software roles? Feel free
+          to reach out!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info Cards -->
+        <div class="contact-cards">
+          <a href="mailto:fathimashana721@gmail.com" class="contact-card reveal reveal-left tilt-card">
+            <div class="contact-card-icon icon-blue">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-label">Email Address</span>
+              <strong class="contact-value">fathimashana721@gmail.com</strong>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow"></i>
+          </a>
+
+          <a href="tel:+918714198655" class="contact-card reveal reveal-left reveal-delay-1 tilt-card">
+            <div class="contact-card-icon icon-emerald">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-label">Phone / WhatsApp</span>
+              <strong class="contact-value">+91 8714198655</strong>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/fathima-shana-b8823340a" target="_blank" rel="noopener noreferrer"
+            class="contact-card reveal reveal-left reveal-delay-2 tilt-card">
+            <div class="contact-card-icon icon-purple">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-label">LinkedIn Profile</span>
+              <strong class="contact-value">linkedin.com/in/fathima-shana-b8823340a</strong>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow"></i>
+          </a>
+
+          <div class="contact-card no-hover reveal reveal-left reveal-delay-3">
+            <div class="contact-card-icon icon-amber">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-label">Location</span>
+              <strong class="contact-value">Malappuram, Kerala, India</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Direct Message Form -->
+        <div class="contact-form-container reveal reveal-right tilt-card">
+          <form id="contactForm" class="contact-form">
+            <h3 class="form-title"><i class="fa-regular fa-paper-plane"></i> Send a Direct Message</h3>
+            <p class="form-subtitle">Fill in the fields below to quickly draft an email to me.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="senderName">Your Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="senderName" name="name" placeholder="e.g. John Doe" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="senderEmail">Your Email</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="senderEmail" name="email" placeholder="e.g. john@example.com" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="messageSubject">Subject</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-heading input-icon"></i>
+                <input type="text" id="messageSubject" name="subject"
+                  placeholder="e.g. Internship Opportunity / Collaboration" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="messageBody">Message</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class="fa-regular fa-comment-dots input-icon"></i>
+                <textarea id="messageBody" name="message" rows="4"
+                  placeholder="Hello Fathima, I came across your portfolio and would like to connect regarding..."
+                  required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Send Message via Email Client
+            </button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Modal -->
+  <div id="projectModal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeDemoModal()">&times;</button>
+      <div id="modalBody">
+        <!-- Dynamically injected content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Code copied to clipboard!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo">&lt;Shana.dev /&gt;</a>
+        <p>Built with clean HTML5, CSS3, and JavaScript. Designed for high performance and modern web standards.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">© 2026 Fathima Shana MV. All rights reserved.</p>
+        <button id="backToTop" class="back-to-top" title="Back to top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
